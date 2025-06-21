@@ -1,7 +1,9 @@
 -- Movie Database Creation Script
+
 -- 1. Create Database
 CREATE DATABASE MovieDB;
 USE MovieDB;
+
 -- 2. Movies Table
 CREATE TABLE Movies (
     movie_id INT PRIMARY KEY,
