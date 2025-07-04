@@ -1,0 +1,42 @@
+ AdInsight Analytics – SQL Case Study
+AdInsight Analytics is a digital marketing agency that helps businesses analyze trends in online ad click behavior among their unique customer base.
+
+Clients share their customer lists with the AdInsight Analytics team, who then aggregate interest-based metrics and produce a comprehensive dataset for further analysis.
+
+These datasets include the composition and rankings of different interests, showing the percentage of a client's customers who interacted with online content related to specific interests over each month.
+
+You have been given the task of analyzing aggregated metrics for one of AdInsight’s major clients and generating high-level insights about the customers and their interests.
+
+Available Data
+This case study contains two datasets that you will use to answer the analysis questions.
+
+1. Interest Metrics
+This table includes aggregated interest data for a major client. Each row represents the performance of a specific interest_id, measured through customer interactions (clicks and engagements) with targeted advertising content.
+
+_month	_year	month_year	interest_id	composition	index_value	ranking	percentile_ranking
+7	2018	07-2018	32486	11.89	6.19	1	99.86
+7	2018	07-2018	6106	9.93	5.31	2	99.73
+...	...	...	...	...	...	...	...
+
+Example Interpretation:
+
+For the first row:
+
+In July 2018, 11.89% of the client’s customers engaged with content related to interest_id = 32486.
+
+The index_value of 6.19 means this engagement rate is 6.19 times higher than the average across all other clients in the same month.
+
+The ranking and percentile_ranking reflect how this interest ranks compared to others for the same month.
+
+2. Interest Map
+This table links interest_id values to human-readable interest categories and summaries. You’ll need to join this table with the interest_metrics table to interpret the interests by name and description.
+
+id	interest_name	interest_summary	created_at	last_modified
+1	Fitness Enthusiasts	Consumers using fitness tracking apps and websites.	2016-05-26 14:57:59	2018-05-23 11:30:12
+2	Gamers	Consumers researching game reviews and cheat codes.	2016-05-26 14:57:59	2018-05-23 11:30:12
+6	Vacation Planners	Consumers reading reviews of vacation destinations and accommodations.	2016-05-26 14:57:59	2018-05-23 11:30:13
+13	Advertising Professionals	People who read advertising industry news.	2016-05-26 14:57:59	2018-05-23 11:30:12
+...	...	...	...	...
+
+You will use these tables to analyze user interests, identify trends, and derive insights to inform client marketing strategies.
+
